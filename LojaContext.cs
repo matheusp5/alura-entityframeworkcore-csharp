@@ -6,7 +6,7 @@ namespace Alura.Loja.Testes.ConsoleApp
     internal class LojaContext : DbContext
     {
         public DbSet<Produto> Produtos { get; set; } // Nome da tabela no banco de dados
-        public DbSet<Compra> Compras { get; set; }
+        public DbSet<Compra> Compras { get; set; } // Modelo da tabela do banco de dados
         public DbSet<Promocao> Promocoes { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
